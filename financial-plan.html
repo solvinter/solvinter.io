@@ -1,287 +1,375 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solvinter Edge — Financial Plans</title>
-  <meta name="description" content="Accra Node 0.1 Year One Budget" />
-  <style>
-    :root {
-      --night: #030611;
-      --deep: #0b1530;
-      --text: #edf3ff;
-      --muted: rgba(237, 243, 255, 0.68);
-      --line: rgba(237, 243, 255, 0.16);
-      --gold: #ffd36a;
-      --blue: rgba(122, 170, 255, 0.22);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * { box-sizing: border-box; }
+<title>Financial Plan | Solvinter Edge</title>
 
-    html, body {
-      margin: 0;
-      min-height: 100%;
-      background: var(--night);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-    }
+<style>
 
-    body {
-      background:
-        radial-gradient(circle at 50% 8%, var(--blue) 0%, transparent 24%),
-        radial-gradient(circle at 50% 28%, rgba(255, 219, 143, 0.12) 0%, transparent 16%),
-        radial-gradient(circle at 50% 45%, var(--deep) 0%, var(--night) 72%);
-    }
+:root{
+    --paper:#f8f6f1;
+    --ink:#071d38;
+    --muted:#5d6670;
+    --gold:#bf8a22;
+    --line:#dde3ea;
+    --card:#ffffff;
+    --shadow:rgba(0,0,0,.07);
+    --green:#2e8b57;
+}
 
-    main {
-      width: min(92vw, 860px);
-      margin: 0 auto;
-      padding: 5rem 1.5rem 6rem;
-    }
+*{
+    box-sizing:border-box;
+}
 
-    .back {
-      color: var(--muted);
-      text-decoration: none;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      font-size: .75rem;
-    }
+body{
+    margin:0;
+    background:linear-gradient(#fbfaf7,#f5f3ee);
+    color:var(--ink);
+    font-family:Georgia,serif;
+}
 
-    .back:hover { color: var(--gold); }
+main{
+    width:min(1000px,92vw);
+    margin:auto;
+    padding:2rem 0 4rem;
+}
 
-    header {
-      margin: 5rem 0 4rem;
-    }
+.back{
+    text-decoration:none;
+    color:var(--gold);
+    font-family:system-ui,sans-serif;
+}
 
-    .star {
-      width: .7rem;
-      height: .7rem;
-      border-radius: 999px;
-      background: var(--gold);
-      box-shadow:
-        0 0 18px rgba(255, 230, 160, .95),
-        0 0 44px rgba(255, 217, 122, .55),
-        0 0 88px rgba(126, 175, 255, .34);
-      margin-bottom: 2rem;
-    }
+header{
+    margin:3rem 0;
+}
 
-    .eyebrow {
-      margin: 0 0 1rem;
-      color: var(--gold);
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      font-size: .78rem;
-    }
+h1{
+    margin:0;
+    font-size:4rem;
+    font-weight:400;
+}
 
-    h1 {
-      margin: 0;
-      font-size: clamp(2.4rem, 8vw, 4.8rem);
-      font-weight: 400;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-      line-height: 1.1;
-    }
+.status{
+    display:inline-block;
+    margin-top:1rem;
+    padding:.4rem .9rem;
+    border-radius:999px;
+    background:#eef7ef;
+    color:var(--green);
+    font-family:system-ui,sans-serif;
+    font-size:.8rem;
+}
 
-    .lead {
-      margin-top: 2rem;
-      max-width: 44rem;
-      color: var(--muted);
-      font-size: 1.18rem;
-      line-height: 1.75;
-    }
+.lead{
+    margin-top:2rem;
+    color:var(--muted);
+    line-height:1.8;
+    font-size:1.1rem;
+}
 
-    section {
-      border-top: 1px solid var(--line);
-      padding: 2rem 0;
-    }
+section{
+    margin:3rem 0;
+}
 
-    h2 {
-      margin: 0 0 1rem;
-      color: var(--gold);
-      font-size: .9rem;
-      font-weight: 400;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-    }
+h2{
+    border-bottom:1px solid var(--line);
+    padding-bottom:.5rem;
+    font-weight:400;
+    font-size:2rem;
+}
 
-    p, li {
-      color: var(--muted);
-      font-size: 1.04rem;
-      line-height: 1.8;
-    }
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:1.2rem;
+}
 
-    ul {
-      margin: 0;
-      padding-left: 1.2rem;
-    }
+.card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:1.5rem;
+    box-shadow:0 15px 40px var(--shadow);
+}
 
-    .statement {
-      margin: 0;
-      color: var(--text);
-      font-size: 1.35rem;
-      line-height: 1.65;
-    }
+.card h3{
+    margin-top:0;
+    color:var(--gold);
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1.4rem;
-      color: var(--muted);
-      font-size: 1rem;
-    }
+p,li{
+    color:var(--muted);
+    line-height:1.8;
+}
 
-    th, td {
-      border-bottom: 1px solid var(--line);
-      padding: .75rem 0;
-      text-align: left;
-    }
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:1rem;
+}
 
-    th:last-child,
-    td:last-child {
-      text-align: right;
-    }
+th{
+    text-align:left;
+    border-bottom:2px solid var(--line);
+    padding:.8rem;
+}
 
-    th {
-      color: var(--text);
-      font-weight: 400;
-    }
+td{
+    padding:.8rem;
+    border-bottom:1px solid var(--line);
+}
 
-    .total {
-      margin-top: 1.5rem;
-      color: var(--text);
-      font-size: 1.45rem;
-    }
+td:last-child,
+th:last-child{
+    text-align:right;
+}
 
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 3rem;
-    }
+.total{
+    margin-top:1.5rem;
+    padding:1rem;
+    border-left:5px solid var(--gold);
+    background:#fffdf8;
+    font-size:1.2rem;
+}
 
-    .links a {
-      border: 1px solid var(--line);
-      padding: .85rem 1rem;
-      color: var(--text);
-      text-decoration: none;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      font-size: .78rem;
-      background: rgba(255,255,255,.03);
-    }
+footer{
+    margin-top:4rem;
+    text-align:center;
+    color:var(--muted);
+    font-family:system-ui,sans-serif;
+}
 
-    .links a:hover {
-      border-color: rgba(255, 211, 106, .5);
-      color: var(--gold);
-      box-shadow: 0 0 22px rgba(255, 211, 106, .12);
-    }
-  </style>
+</style>
+
 </head>
 
 <body>
-  <main>
-    <a class="back" href="/">← Solvinter</a>
 
-    <header>
-      <div class="star" aria-hidden="true"></div>
-      <p class="eyebrow">Accra Node 0.1</p>
-      <h1>Year One Budget</h1>
-      <p class="lead">
-        The purpose of Node 0.1 is not to maximize profit. Its purpose is to
-        demonstrate that a small, quiet, well-designed workspace in central
-        Accra can finance a broader community node.
-      </p>
-    </header>
+<main>
 
-    <section>
-      <h2>Purpose</h2>
-      <p class="statement">
-        The workstation is the economic engine.<br />
-        The node is the mission.
-      </p>
-    </section>
+<a class="back" href="edge.html">← Edge</a>
 
-    <section>
-      <h2>Year One Goals</h2>
-      <ul>
-        <li>Renovate one room in Cow Lane.</li>
-        <li>Create two quiet workstations.</li>
-        <li>Install reliable internet and cooling.</li>
-        <li>Test remote digital work.</li>
-        <li>Document every step.</li>
-        <li>Build a reproducible model for future nodes.</li>
-      </ul>
-    </section>
+<header>
 
-    <section>
-      <h2>Long-term Vision</h2>
-      <p>Income generated in the workstation helps finance:</p>
-      <ul>
-        <li>maker space</li>
-        <li>AI access</li>
-        <li>gaming evenings</li>
-        <li>3D printing</li>
-        <li>education</li>
-        <li>homework support</li>
-        <li>local entrepreneurship</li>
-        <li>future Edge nodes</li>
-      </ul>
-    </section>
+<h1>Accra Node 0.1</h1>
 
-    <section>
-      <h2>Preliminary Building Budget</h2>
-      <table>
-        <tr><th>Item</th><th>Estimated Cost</th></tr>
-        <tr><td>Timber framing</td><td>2 500 SEK</td></tr>
-        <tr><td>Rockwool insulation</td><td>3 000 SEK</td></tr>
-        <tr><td>Drywall</td><td>2 500 SEK</td></tr>
-        <tr><td>Electrical installation</td><td>8 000 SEK</td></tr>
-        <tr><td>CAT6 network</td><td>1 500 SEK</td></tr>
-        <tr><td>Lighting</td><td>1 500 SEK</td></tr>
-        <tr><td>Air conditioning</td><td>10 000 SEK</td></tr>
-        <tr><td>Masonry</td><td>3 000 SEK</td></tr>
-        <tr><td>Painting</td><td>2 000 SEK</td></tr>
-        <tr><td>Furniture</td><td>7 000 SEK</td></tr>
-        <tr><td>Miscellaneous</td><td>5 000 SEK</td></tr>
-      </table>
-      <p class="total">Estimated total: 45 000–55 000 SEK</p>
-    </section>
+<div class="status">
+Draft · Year One Budget
+</div>
 
-    <section>
-      <h2>Existing Hardware</h2>
-      <ul>
-        <li>ASUS WiFi 7 router</li>
-        <li>Gigabit switch</li>
-        <li>Raspberry Pi units</li>
-        <li>MacBook Pro 2015</li>
-        <li>Dell server</li>
-        <li>B250 workstation</li>
-        <li>GPUs</li>
-        <li>Existing monitors, keyboards and mice</li>
-      </ul>
-      <p>This significantly reduces the initial investment.</p>
-    </section>
+<p class="lead">
 
-    <section>
-      <h2>Success Criteria</h2>
-      <ul>
-        <li>One quiet workstation is operational.</li>
-        <li>Two people can work there every weekday.</li>
-        <li>Stable internet and cooling are maintained.</li>
-        <li>Income begins covering operating costs.</li>
-        <li>The entire process is documented.</li>
-      </ul>
-      <p>
-        The first node should become a reference implementation for future
-        Solvinter Edge locations.
-      </p>
-    </section>
+The first Solvinter node is not designed to maximize profit.
 
-    <nav class="links">
-      <a href="/">Back</a>
-      <a href="edge.html">Edge</a>
-      <a href="https://github.com/solvinter">GitHub</a>
-    </nav>
-  </main>
+It is designed to prove that a quiet, well-built workspace can finance a wider community technology node.
+
+</p>
+
+</header>
+
+<section>
+
+<h2>Purpose</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Economic Engine</h3>
+
+<p>
+
+The workstation generates income through global digital work.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Mission</h3>
+
+<p>
+
+The income finances education, technology and future community infrastructure.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Year One Goals</h2>
+
+<ul>
+
+<li>Renovate one room in Cow Lane.</li>
+
+<li>Create two quiet workstations.</li>
+
+<li>Install reliable internet and cooling.</li>
+
+<li>Test remote digital work.</li>
+
+<li>Document every step.</li>
+
+<li>Build a repeatable model.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Long-Term Vision</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<ul>
+
+<li>Maker space</li>
+
+<li>AI access</li>
+
+<li>Gaming evenings</li>
+
+<li>3D printing</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<ul>
+
+<li>Education</li>
+
+<li>Homework support</li>
+
+<li>Local entrepreneurship</li>
+
+<li>Future Edge nodes</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Preliminary Building Budget</h2>
+
+<table>
+
+<tr>
+<th>Item</th>
+<th>Estimated Cost (SEK)</th>
+</tr>
+
+<tr><td>Timber framing</td><td>2 500</td></tr>
+<tr><td>Rockwool insulation</td><td>3 000</td></tr>
+<tr><td>Drywall</td><td>2 500</td></tr>
+<tr><td>Electrical installation</td><td>8 000</td></tr>
+<tr><td>CAT6 network</td><td>1 500</td></tr>
+<tr><td>Lighting</td><td>1 500</td></tr>
+<tr><td>Air conditioning</td><td>10 000</td></tr>
+<tr><td>Masonry</td><td>3 000</td></tr>
+<tr><td>Painting</td><td>2 000</td></tr>
+<tr><td>Furniture</td><td>7 000</td></tr>
+<tr><td>Miscellaneous</td><td>5 000</td></tr>
+
+</table>
+
+<div class="total">
+
+Estimated Total
+
+<strong>45 000–55 000 SEK</strong>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Existing Hardware</h2>
+
+<ul>
+
+<li>ASUS WiFi 7 router</li>
+
+<li>Gigabit switch</li>
+
+<li>3 × Raspberry Pi</li>
+
+<li>MacBook Pro 2015</li>
+
+<li>Dell server</li>
+
+<li>B250 workstation</li>
+
+<li>GPUs</li>
+
+<li>Monitors, keyboards and mice</li>
+
+</ul>
+
+<p>
+
+Existing hardware substantially reduces the required capital investment.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Success Criteria</h2>
+
+<ul>
+
+<li>One quiet workstation is operational.</li>
+
+<li>Two people work there every weekday.</li>
+
+<li>Stable internet and cooling.</li>
+
+<li>Income begins covering operating costs.</li>
+
+<li>The entire process is documented.</li>
+
+</ul>
+
+<p>
+
+The first node becomes the reference implementation for future Solvinter Edge locations.
+
+</p>
+
+</section>
+
+<footer>
+
+Solvinter Edge · Financial Plan
+
+</footer>
+
+</main>
+
 </body>
+
 </html>
