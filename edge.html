@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Solvinter Edge</title>
-  <meta name="description" content="Solvinter Edge" />
+  <meta
+    name="description"
+    content="Documentation-first infrastructure for people, compute and learning."
+  />
+
   <style>
     :root {
       --night: #030611;
       --deep: #0b1530;
       --text: #edf3ff;
-      --muted: rgba(237, 243, 255, 0.68);
-      --line: rgba(237, 243, 255, 0.16);
+      --muted: rgba(237,243,255,.68);
+      --line: rgba(237,243,255,.16);
       --gold: #ffd36a;
-      --blue: rgba(122, 170, 255, 0.22);
+      --blue: rgba(122,170,255,.18);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       min-height: 100%;
       background: var(--night);
@@ -28,29 +36,31 @@
 
     body {
       background:
-        radial-gradient(circle at 50% 18%, var(--blue) 0%, transparent 24%),
-        radial-gradient(circle at 50% 44%, rgba(255, 219, 143, 0.14) 0%, transparent 18%),
-        radial-gradient(circle at 50% 55%, var(--deep) 0%, var(--night) 72%);
+        radial-gradient(circle at 50% 16%, var(--blue) 0%, transparent 26%),
+        radial-gradient(circle at 50% 52%, rgba(255,211,106,.08) 0%, transparent 18%),
+        radial-gradient(circle at center, var(--deep) 0%, var(--night) 72%);
     }
 
     main {
-      width: min(92vw, 780px);
-      margin: 0 auto;
-      padding: 6rem 1.5rem 5rem;
+      width: min(92vw, 760px);
+      margin: auto;
+      padding: 5rem 1.5rem 6rem;
     }
 
     .back {
-      color: var(--muted);
       text-decoration: none;
-      letter-spacing: .16em;
+      color: var(--muted);
       text-transform: uppercase;
+      letter-spacing: .16em;
       font-size: .75rem;
     }
 
-    .back:hover { color: var(--gold); }
+    .back:hover {
+      color: var(--gold);
+    }
 
     header {
-      margin: 5rem 0 4rem;
+      margin: 5rem 0;
     }
 
     .star {
@@ -59,132 +69,115 @@
       border-radius: 999px;
       background: var(--gold);
       box-shadow:
-        0 0 18px rgba(255, 230, 160, .95),
-        0 0 44px rgba(255, 217, 122, .55),
-        0 0 88px rgba(126, 175, 255, .34);
+        0 0 18px rgba(255,230,160,.95),
+        0 0 44px rgba(255,217,122,.45),
+        0 0 80px rgba(126,175,255,.28);
       margin-bottom: 2rem;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(2.6rem, 8vw, 5rem);
-      font-weight: 400;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-    }
-
-    .lead {
-      margin-top: 1.8rem;
-      max-width: 42rem;
-      color: var(--muted);
-      font-size: 1.18rem;
-      line-height: 1.75;
-    }
-
-    section {
-      border-top: 1px solid var(--line);
-      padding: 2rem 0;
-    }
-
-    h2 {
-      margin: 0 0 1rem;
-      color: var(--gold);
-      font-size: .9rem;
+      font-size: clamp(2.7rem,8vw,5rem);
       font-weight: 400;
       letter-spacing: .18em;
       text-transform: uppercase;
     }
 
-    p, li {
+    .lead {
+      margin-top: 1.6rem;
+      max-width: 38rem;
       color: var(--muted);
-      font-size: 1.04rem;
-      line-height: 1.8;
+      font-size: 1.15rem;
+      line-height: 1.7;
     }
 
-    ul {
-      margin: 0;
-      padding-left: 1.2rem;
+    nav {
+      display: grid;
+      gap: .9rem;
     }
 
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 3rem;
-    }
-
-    .links a {
-      border: 1px solid var(--line);
-      padding: .85rem 1rem;
-      color: var(--text);
+    nav a {
+      display: block;
+      padding: 1rem 1.2rem;
       text-decoration: none;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      font-size: .78rem;
+      color: var(--text);
+      border: 1px solid var(--line);
       background: rgba(255,255,255,.03);
+      transition: .2s ease;
+      letter-spacing: .08em;
     }
 
-    .links a:hover {
-      border-color: rgba(255, 211, 106, .5);
+    nav a:hover {
+      border-color: rgba(255,211,106,.45);
       color: var(--gold);
-      box-shadow: 0 0 22px rgba(255, 211, 106, .12);
+      background: rgba(255,255,255,.05);
+      transform: translateX(4px);
+      box-shadow: 0 0 24px rgba(255,211,106,.08);
+    }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: .85rem;
+      text-align: center;
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <a class="back" href="/">← Solvinter</a>
 
-    <header>
-      <div class="star" aria-hidden="true"></div>
-      <h1>Solvinter Edge</h1>
-      <p class="lead">
-        A small economic observatory for human digital work, distributed compute
-        and documentation-first infrastructure.
-      </p>
-    </header>
+<main>
 
-    <section>
-      <h2>Vision</h2>
-      <p>
-        Cow Lane first. Future nodes later. The goal is to test whether small,
-        well-documented workstations can create real income before larger
-        infrastructure is built.
-      </p>
-    </section>
+<a class="back" href="/">← Solvinter</a>
 
-    <section>
-      <h2>Budget</h2>
-      <p>
-        Phase 0 is deliberately small. Two workstations, connectivity, basic
-        power, training time and documentation.
-      </p>
-    </section>
+<header>
 
-    <section>
-      <h2>Work</h2>
-      <ul>
-        <li>AI-assisted digital tasks</li>
-        <li>Documentation</li>
-        <li>Translation and writing</li>
-        <li>Research support</li>
-        <li>Lightweight technical operations</li>
-      </ul>
-    </section>
+<div class="star"></div>
 
-    <section>
-      <h2>Principle</h2>
-      <p>
-        No large claims before logs. No scaling before evidence.
-        Documentation first.
-      </p>
-    </section>
+<h1>Solvinter Edge</h1>
 
-    <nav class="links">
-      <a href="https://github.com/solvinter/edge.solvinter">GitHub</a>
-      <a href="https://edge.solvinter.io">Edge docs</a>
-      <a href="/">Back</a>
-    </nav>
-  </main>
+<p class="lead">
+Documentation-first infrastructure for people,
+compute and learning.
+</p>
+
+</header>
+
+<nav>
+
+<a href="/manifesto">Manifesto</a>
+
+<a href="/financial-plan">Financial Plan</a>
+
+<a href="/documentation">Documentation</a>
+
+<a href="/nodes">Nodes</a>
+
+<a href="/projects">Projects</a>
+
+<a href="/research">Research</a>
+
+<a href="/photography">Photography</a>
+
+<a href="/graffiti">Graffiti</a>
+
+<a href="/agenda">Agenda</a>
+
+<a href="/logs">Build Logs</a>
+
+<a href="https://github.com/solvinter/edge.solvinter">
+GitHub Repository
+</a>
+
+</nav>
+
+<footer>
+
+No large claims before logs.
+
+</footer>
+
+</main>
+
 </body>
 </html>
