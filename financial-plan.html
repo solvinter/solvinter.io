@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solvinter Edge — Financial Plans</title>
+  <meta name="description" content="Accra Node 0.1 Year One Budget" />
+  <style>
+    :root {
+      --night: #030611;
+      --deep: #0b1530;
+      --text: #edf3ff;
+      --muted: rgba(237, 243, 255, 0.68);
+      --line: rgba(237, 243, 255, 0.16);
+      --gold: #ffd36a;
+      --blue: rgba(122, 170, 255, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--night);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 8%, var(--blue) 0%, transparent 24%),
+        radial-gradient(circle at 50% 28%, rgba(255, 219, 143, 0.12) 0%, transparent 16%),
+        radial-gradient(circle at 50% 45%, var(--deep) 0%, var(--night) 72%);
+    }
+
+    main {
+      width: min(92vw, 860px);
+      margin: 0 auto;
+      padding: 5rem 1.5rem 6rem;
+    }
+
+    .back {
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: .75rem;
+    }
+
+    .back:hover { color: var(--gold); }
+
+    header {
+      margin: 5rem 0 4rem;
+    }
+
+    .star {
+      width: .7rem;
+      height: .7rem;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow:
+        0 0 18px rgba(255, 230, 160, .95),
+        0 0 44px rgba(255, 217, 122, .55),
+        0 0 88px rgba(126, 175, 255, .34);
+      margin-bottom: 2rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: var(--gold);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-size: .78rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 8vw, 4.8rem);
+      font-weight: 400;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .lead {
+      margin-top: 2rem;
+      max-width: 44rem;
+      color: var(--muted);
+      font-size: 1.18rem;
+      line-height: 1.75;
+    }
+
+    section {
+      border-top: 1px solid var(--line);
+      padding: 2rem 0;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      color: var(--gold);
+      font-size: .9rem;
+      font-weight: 400;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 1.04rem;
+      line-height: 1.8;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .statement {
+      margin: 0;
+      color: var(--text);
+      font-size: 1.35rem;
+      line-height: 1.65;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.4rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: .75rem 0;
+      text-align: left;
+    }
+
+    th:last-child,
+    td:last-child {
+      text-align: right;
+    }
+
+    th {
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    .total {
+      margin-top: 1.5rem;
+      color: var(--text);
+      font-size: 1.45rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    .links a {
+      border: 1px solid var(--line);
+      padding: .85rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      background: rgba(255,255,255,.03);
+    }
+
+    .links a:hover {
+      border-color: rgba(255, 211, 106, .5);
+      color: var(--gold);
+      box-shadow: 0 0 22px rgba(255, 211, 106, .12);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <a class="back" href="/">← Solvinter</a>
+
+    <header>
+      <div class="star" aria-hidden="true"></div>
+      <p class="eyebrow">Accra Node 0.1</p>
+      <h1>Year One Budget</h1>
+      <p class="lead">
+        The purpose of Node 0.1 is not to maximize profit. Its purpose is to
+        demonstrate that a small, quiet, well-designed workspace in central
+        Accra can finance a broader community node.
+      </p>
+    </header>
+
+    <section>
+      <h2>Purpose</h2>
+      <p class="statement">
+        The workstation is the economic engine.<br />
+        The node is the mission.
+      </p>
+    </section>
+
+    <section>
+      <h2>Year One Goals</h2>
+      <ul>
+        <li>Renovate one room in Cow Lane.</li>
+        <li>Create two quiet workstations.</li>
+        <li>Install reliable internet and cooling.</li>
+        <li>Test remote digital work.</li>
+        <li>Document every step.</li>
+        <li>Build a reproducible model for future nodes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Long-term Vision</h2>
+      <p>Income generated in the workstation helps finance:</p>
+      <ul>
+        <li>maker space</li>
+        <li>AI access</li>
+        <li>gaming evenings</li>
+        <li>3D printing</li>
+        <li>education</li>
+        <li>homework support</li>
+        <li>local entrepreneurship</li>
+        <li>future Edge nodes</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Preliminary Building Budget</h2>
+      <table>
+        <tr><th>Item</th><th>Estimated Cost</th></tr>
+        <tr><td>Timber framing</td><td>2 500 SEK</td></tr>
+        <tr><td>Rockwool insulation</td><td>3 000 SEK</td></tr>
+        <tr><td>Drywall</td><td>2 500 SEK</td></tr>
+        <tr><td>Electrical installation</td><td>8 000 SEK</td></tr>
+        <tr><td>CAT6 network</td><td>1 500 SEK</td></tr>
+        <tr><td>Lighting</td><td>1 500 SEK</td></tr>
+        <tr><td>Air conditioning</td><td>10 000 SEK</td></tr>
+        <tr><td>Masonry</td><td>3 000 SEK</td></tr>
+        <tr><td>Painting</td><td>2 000 SEK</td></tr>
+        <tr><td>Furniture</td><td>7 000 SEK</td></tr>
+        <tr><td>Miscellaneous</td><td>5 000 SEK</td></tr>
+      </table>
+      <p class="total">Estimated total: 45 000–55 000 SEK</p>
+    </section>
+
+    <section>
+      <h2>Existing Hardware</h2>
+      <ul>
+        <li>ASUS WiFi 7 router</li>
+        <li>Gigabit switch</li>
+        <li>Raspberry Pi units</li>
+        <li>MacBook Pro 2015</li>
+        <li>Dell server</li>
+        <li>B250 workstation</li>
+        <li>GPUs</li>
+        <li>Existing monitors, keyboards and mice</li>
+      </ul>
+      <p>This significantly reduces the initial investment.</p>
+    </section>
+
+    <section>
+      <h2>Success Criteria</h2>
+      <ul>
+        <li>One quiet workstation is operational.</li>
+        <li>Two people can work there every weekday.</li>
+        <li>Stable internet and cooling are maintained.</li>
+        <li>Income begins covering operating costs.</li>
+        <li>The entire process is documented.</li>
+      </ul>
+      <p>
+        The first node should become a reference implementation for future
+        Solvinter Edge locations.
+      </p>
+    </section>
+
+    <nav class="links">
+      <a href="/">Back</a>
+      <a href="edge.html">Edge</a>
+      <a href="https://github.com/solvinter">GitHub</a>
+    </nav>
+  </main>
+</body>
+</html>
