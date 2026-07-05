@@ -1,60 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manifesto | Solvinter Edge</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solvinter Edge — Accra Node 0.1</title>
+  <style>
+    :root {
+      --night: #030611;
+      --deep: #0b1530;
+      --text: #edf3ff;
+      --muted: rgba(237, 243, 255, 0.68);
+      --line: rgba(237, 243, 255, 0.16);
+      --gold: #ffd36a;
+      --blue: rgba(122, 170, 255, 0.22);
+    }
 
-  <link rel="stylesheet" href="../assets/css/edge.css">
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--night);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 8%, var(--blue) 0%, transparent 24%),
+        radial-gradient(circle at 50% 28%, rgba(255, 219, 143, 0.12) 0%, transparent 16%),
+        radial-gradient(circle at 50% 45%, var(--deep) 0%, var(--night) 72%);
+    }
+
+    main {
+      width: min(92vw, 820px);
+      margin: 0 auto;
+      padding: 5rem 1.5rem 6rem;
+    }
+
+    .back {
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: .75rem;
+    }
+
+    .back:hover { color: var(--gold); }
+
+    header {
+      margin: 5rem 0 4rem;
+    }
+
+    .star {
+      width: .7rem;
+      height: .7rem;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow:
+        0 0 18px rgba(255, 230, 160, .95),
+        0 0 44px rgba(255, 217, 122, .55),
+        0 0 88px rgba(126, 175, 255, .34);
+      margin-bottom: 2rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      color: var(--gold);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-size: .78rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 400;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      line-height: 1.08;
+    }
+
+    .lead {
+      margin-top: 2rem;
+      max-width: 42rem;
+      color: var(--muted);
+      font-size: 1.18rem;
+      line-height: 1.75;
+    }
+
+    section {
+      border-top: 1px solid var(--line);
+      padding: 2rem 0;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      color: var(--gold);
+      font-size: .9rem;
+      font-weight: 400;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 1.4rem 0 .4rem;
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 400;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 1.04rem;
+      line-height: 1.8;
+    }
+
+    ul, ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .statement {
+      margin: 0;
+      color: var(--text);
+      font-size: 1.35rem;
+      line-height: 1.65;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    .links a {
+      border: 1px solid var(--line);
+      padding: .85rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      background: rgba(255,255,255,.03);
+    }
+
+    .links a:hover {
+      border-color: rgba(255, 211, 106, .5);
+      color: var(--gold);
+      box-shadow: 0 0 22px rgba(255, 211, 106, .12);
+    }
+  </style>
 </head>
 
 <body>
+  <main>
+    <a class="back" href="/">← Solvinter</a>
 
-<main>
+    <header>
+      <div class="star" aria-hidden="true"></div>
+      <p class="eyebrow">Phase 01</p>
+      <h1>Accra Node 0.1</h1>
+      <p class="lead">
+        Solvinter Edge begins with one practical node in Accra.
+        The first economic engine is a small workstation room where
+        2–4 people can perform global digital work.
+      </p>
+    </header>
 
-<a class="back" href="../index.html">← Edge</a>
+    <section>
+      <h2>Summary</h2>
+      <p>
+        The long-term vision is a network of local digital infrastructure nodes:
+        places for work, cooling, charging, learning, making, gaming, planning
+        and experimentation.
+      </p>
+    </section>
 
-<header>
-  <h1>Manifesto</h1>
+    <section>
+      <h2>Core Idea</h2>
+      <p class="statement">
+        The node is the purpose.<br />
+        The workstation room is the engine.
+      </p>
+      <p>
+        Revenue from digital work helps finance the wider community function
+        of the node.
+      </p>
+    </section>
 
-  <p class="lead">
-    Solvinter Edge begins with one practical node.
-    Every future decision should make the next node easier to build.
-  </p>
-</header>
+    <section>
+      <h2>Why Accra First</h2>
+      <p>Accra is the first operational node because it has better access to:</p>
+      <ul>
+        <li>internet</li>
+        <li>electricity</li>
+        <li>skilled people</li>
+        <li>logistics</li>
+        <li>supervision</li>
+        <li>international work opportunities</li>
+      </ul>
+      <p>
+        The coastal nodes remain part of the long-term vision, but their
+        revenue models are not yet proven.
+      </p>
+    </section>
 
-<section>
+    <section>
+      <h2>Initial Workstation Model</h2>
+      <p>The first room should support:</p>
+      <ul>
+        <li>2 workstations initially</li>
+        <li>expansion to 4 workstations if stable</li>
+        <li>remote digital work</li>
+        <li>AI-assisted work</li>
+        <li>training through practice</li>
+      </ul>
+      <p>
+        The goal is not only income. The goal is to understand how to teach
+        this work locally.
+      </p>
+    </section>
 
-<h2>Phase 01 — Accra Node 0.1</h2>
+    <section>
+      <h2>Wider Node Vision</h2>
+      <p>Over time, the node can include:</p>
+      <ul>
+        <li>maker space</li>
+        <li>evening gaming</li>
+        <li>AI lab</li>
+        <li>3D printing</li>
+        <li>homework support</li>
+        <li>small business planning</li>
+        <li>budgeting support</li>
+        <li>local technical education</li>
+        <li>community access to computing</li>
+      </ul>
+    </section>
 
-<p>
-Solvinter Edge begins with one practical node in Accra.
-</p>
+    <section>
+      <h2>Core Values</h2>
 
-<p>
-The long-term vision is a network of local digital infrastructure:
-places for work, learning, making, planning and experimentation.
-</p>
+      <h3>Ethics</h3>
+      <p>Fair access, transparent documentation and long-term local value.</p>
 
-<p>
-The first economic engine is a small workstation room where
-two to four people perform global digital work.
-</p>
+      <h3>Aesthetics</h3>
+      <p>
+        A calm and dignified environment that makes people want to think,
+        work and learn.
+      </p>
 
-</section>
+      <h3>Ergonomics</h3>
+      <p>A physical space designed for health, focus and sustained work.</p>
+    </section>
 
-<section>
+    <section>
+      <h2>Year 1 Focus</h2>
+      <p>Do not overbuild.</p>
+      <p>The first year should prove:</p>
+      <ol>
+        <li>A small room can be renovated affordably.</li>
+        <li>People can work there productively.</li>
+        <li>Remote digital work can create income.</li>
+        <li>The node can become a repeatable model.</li>
+      </ol>
+    </section>
 
-<h2>Read the full document</h2>
-
-<p>
-The manifesto is maintained as documentation inside the repository
-and evolves together with the project.
-</p>
-
-</section>
-
-</main>
-
+    <nav class="links">
+      <a href="/">Back</a>
+      <a href="https://github.com/solvinter">GitHub</a>
+      <a href="https://github.com/solvinter/edge.solvinter">Edge repo</a>
+    </nav>
+  </main>
 </body>
 </html>
