@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Workspace | Solvinter Edge</title>
+
+<style>
+:root{
+    --paper:#f8f6f1;
+    --ink:#071d38;
+    --muted:#5d6670;
+    --gold:#bf8a22;
+    --line:#dde3ea;
+    --card:#ffffff;
+    --shadow:rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box;}
+
+body{
+    margin:0;
+    background:linear-gradient(#fbfaf7,#f3f0e9);
+    color:var(--ink);
+    font-family:Georgia,serif;
+}
+
+main{
+    width:min(1050px,92vw);
+    margin:auto;
+    padding:2rem 0 4rem;
+}
+
+.back{
+    color:var(--gold);
+    text-decoration:none;
+    font-family:system-ui,sans-serif;
+}
+
+header{
+    margin:3rem 0;
+}
+
+.phase{
+    display:inline-block;
+    margin-bottom:1rem;
+    padding:.45rem .9rem;
+    border:1px solid var(--line);
+    border-radius:999px;
+    color:var(--gold);
+    font-family:system-ui,sans-serif;
+    font-size:.8rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+h1{
+    margin:0;
+    font-size:clamp(3rem,8vw,5rem);
+    font-weight:400;
+}
+
+.lead{
+    margin-top:2rem;
+    color:var(--muted);
+    line-height:1.8;
+    max-width:760px;
+    font-size:1.1rem;
+}
+
+.hero-image{
+    margin:3rem 0;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 20px 60px var(--shadow);
+    background:white;
+}
+
+.hero-image img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+section{
+    margin:3rem 0;
+}
+
+h2{
+    border-bottom:1px solid var(--line);
+    padding-bottom:.5rem;
+    font-weight:400;
+    font-size:2rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1.2rem;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:1.4rem;
+    box-shadow:0 14px 38px var(--shadow);
+}
+
+.card h3{
+    margin-top:0;
+    color:var(--gold);
+}
+
+p,li{
+    color:var(--muted);
+    line-height:1.8;
+}
+
+footer{
+    margin-top:4rem;
+    text-align:center;
+    color:var(--muted);
+    font-family:system-ui,sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+<a class="back" href="visualisations.html">← Visualisations</a>
+
+<header>
+<div class="phase">Phase 1 · Cow Lane</div>
+
+<h1>Workspace</h1>
+
+<p class="lead">
+The first operational form of Solvinter Edge is not a large campus or a data center.
+It is a quiet, cooled and carefully designed room where people can do meaningful
+digital work with computers, connectivity and AI.
+</p>
+</header>
+
+<div class="hero-image">
+<img src="images/visualisations/workspace.png" alt="AC cooled Cow Lane workspace">
+</div>
+
+<section>
+<h2>Purpose</h2>
+
+<p>
+The workspace is the economic engine of Cow Lane Node 0.1.
+</p>
+
+<p>
+It is designed to support remote digital work, AI-assisted production,
+documentation, research, training and practical learning.
+</p>
+
+<p>
+The goal is not only income. The goal is to learn how people can be trained,
+supported and trusted to perform valuable digital work locally.
+</p>
+</section>
+
+<section>
+<h2>Design Requirements</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Silence</h3>
+<p>
+The room should be acoustically calm. Sound insulation, soft materials and
+controlled equipment noise should make sustained concentration possible.
+</p>
+</div>
+
+<div class="card">
+<h3>Cooling</h3>
+<p>
+Air conditioning is essential. A productive workspace in Accra must protect
+people and equipment from heat stress.
+</p>
+</div>
+
+<div class="card">
+<h3>Connectivity</h3>
+<p>
+The first version can use a 5G router and WiFi, with wired networking added
+where stability matters.
+</p>
+</div>
+
+<div class="card">
+<h3>Ergonomics</h3>
+<p>
+Desks, chairs, screens, lighting and airflow should support long work sessions
+without turning the room into a harsh office.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Initial Capacity</h2>
+
+<ul>
+<li>Two workstations in the first phase.</li>
+<li>Expansion to four workstations if the model proves stable.</li>
+<li>Computers, monitors, keyboards and mice from existing hardware where possible.</li>
+<li>AI tools used as practical assistance rather than spectacle.</li>
+<li>Documentation of every decision, cost, failure and improvement.</li>
+</ul>
+</section>
+
+<section>
+<h2>Why This Comes First</h2>
+
+<p>
+The workstation comes before larger infrastructure because people create value
+immediately.
+</p>
+
+<p>
+A solar compute unit, GPU cluster or larger technical installation only becomes
+valuable when there are capable people who can operate, maintain and use it
+productively.
+</p>
+
+<p>
+The first investment is therefore in people, workspace, documentation and
+repeatable practice.
+</p>
+</section>
+
+<section>
+<h2>Success Criteria</h2>
+
+<ul>
+<li>At least one quiet workstation is operational.</li>
+<li>Two people can work there on a regular schedule.</li>
+<li>Internet, cooling and power remain stable enough for digital work.</li>
+<li>The work begins to cover part of the operating cost.</li>
+<li>The process becomes clear enough to teach and repeat.</li>
+</ul>
+</section>
+
+<footer>
+Solvinter Edge · Workspace
+</footer>
+
+</main>
+
+</body>
+</html>
