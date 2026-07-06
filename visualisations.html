@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Visualisations | Solvinter Edge</title>
+
+<style>
+:root{
+    --paper:#f8f6f1;
+    --ink:#071d38;
+    --muted:#5d6670;
+    --gold:#bf8a22;
+    --line:#dde3ea;
+    --card:#ffffff;
+    --shadow:rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box;}
+
+body{
+    margin:0;
+    background:linear-gradient(#fbfaf7,#f3f0e9);
+    color:var(--ink);
+    font-family:Georgia,serif;
+}
+
+main{
+    width:min(1100px,92vw);
+    margin:auto;
+    padding:2rem 0 4rem;
+}
+
+.back{
+    color:var(--gold);
+    text-decoration:none;
+    font-family:system-ui,sans-serif;
+}
+
+header{
+    margin:3rem 0;
+}
+
+h1{
+    margin:0;
+    font-size:clamp(3rem,8vw,5rem);
+    font-weight:400;
+}
+
+.lead{
+    margin-top:2rem;
+    color:var(--muted);
+    line-height:1.8;
+    max-width:760px;
+    font-size:1.1rem;
+}
+
+.hero-image{
+    margin:3rem 0;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 20px 60px var(--shadow);
+    background:white;
+}
+
+.hero-image img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+section{
+    margin:3rem 0;
+}
+
+h2{
+    border-bottom:1px solid var(--line);
+    padding-bottom:.5rem;
+    font-weight:400;
+    font-size:2rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1.2rem;
+}
+
+.card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 14px 38px var(--shadow);
+    transition:.18s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(191,138,34,.55);
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:16/10;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:1.3rem;
+}
+
+.card h3{
+    margin:0 0 .7rem;
+    color:var(--gold);
+    font-size:1.25rem;
+}
+
+.card p{
+    margin:0;
+    color:var(--muted);
+    line-height:1.7;
+}
+
+footer{
+    margin-top:4rem;
+    text-align:center;
+    color:var(--muted);
+    font-family:system-ui,sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+<a class="back" href="edge.html">← Edge</a>
+
+<header>
+<h1>Visualisations</h1>
+
+<p class="lead">
+Three visual starting points for Cow Lane Node 0.1: the first workspace,
+a temporary living space, and a future solar-powered compute unit.
+</p>
+</header>
+
+<div class="hero-image">
+<img src="images/visualisations/overview.png" alt="Solvinter Edge visualisation overview">
+</div>
+
+<section>
+<h2>Explore</h2>
+
+<div class="grid">
+
+<a class="card" href="workspace.html">
+<img src="images/visualisations/workspace.png" alt="Cow Lane workspace">
+<div class="card-content">
+<h3>Workspace</h3>
+<p>
+The first phase of Edge: a quiet, AC-cooled, ergonomic workstation room
+with reliable connectivity, computers and AI-assisted digital work.
+</p>
+</div>
+</a>
+
+<a class="card" href="living-space.html">
+<img src="images/visualisations/living-space.png" alt="Living space with pentry">
+<div class="card-content">
+<h3>Living Space</h3>
+<p>
+A compact room with sleeping space, pentry and fridge for temporary stays
+during the build phase or future overnight visits in Accra.
+</p>
+</div>
+</a>
+
+<a class="card" href="solar-compute.html">
+<img src="images/visualisations/compute-node.png" alt="Solar powered compute unit">
+<div class="card-content">
+<h3>Solar Compute</h3>
+<p>
+A later-stage vision: small solar-powered compute infrastructure that can
+support rendering, AI work and passive long-term value creation.
+</p>
+</div>
+</a>
+
+</div>
+</section>
+
+<footer>
+Solvinter Edge · Visualisations
+</footer>
+
+</main>
+
+</body>
+</html>
