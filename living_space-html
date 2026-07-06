@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Living Space | Solvinter Edge</title>
+
+<style>
+:root{
+    --paper:#f8f6f1;
+    --ink:#071d38;
+    --muted:#5d6670;
+    --gold:#bf8a22;
+    --line:#dde3ea;
+    --card:#ffffff;
+    --shadow:rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box;}
+
+body{
+    margin:0;
+    background:linear-gradient(#fbfaf7,#f3f0e9);
+    color:var(--ink);
+    font-family:Georgia,serif;
+}
+
+main{
+    width:min(1050px,92vw);
+    margin:auto;
+    padding:2rem 0 4rem;
+}
+
+.back{
+    color:var(--gold);
+    text-decoration:none;
+    font-family:system-ui,sans-serif;
+}
+
+header{
+    margin:3rem 0;
+}
+
+.phase{
+    display:inline-block;
+    margin-bottom:1rem;
+    padding:.45rem .9rem;
+    border:1px solid var(--line);
+    border-radius:999px;
+    color:var(--gold);
+    font-family:system-ui,sans-serif;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+h1{
+    margin:0;
+    font-size:clamp(3rem,8vw,5rem);
+    font-weight:400;
+}
+
+.lead{
+    margin-top:2rem;
+    color:var(--muted);
+    line-height:1.8;
+    max-width:760px;
+    font-size:1.1rem;
+}
+
+.hero{
+    margin:3rem 0;
+    overflow:hidden;
+    border-radius:22px;
+    border:1px solid var(--line);
+    box-shadow:0 20px 60px var(--shadow);
+    background:white;
+}
+
+.hero img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+section{
+    margin:3rem 0;
+}
+
+h2{
+    border-bottom:1px solid var(--line);
+    padding-bottom:.5rem;
+    font-weight:400;
+    font-size:2rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:1.2rem;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:1.4rem;
+    box-shadow:0 14px 38px var(--shadow);
+}
+
+.card h3{
+    margin-top:0;
+    color:var(--gold);
+}
+
+p,li{
+    color:var(--muted);
+    line-height:1.8;
+}
+
+footer{
+    margin-top:4rem;
+    text-align:center;
+    color:var(--muted);
+    font-family:system-ui,sans-serif;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main>
+
+<a class="back" href="visualisations.html">← Visualisations</a>
+
+<header>
+
+<div class="phase">
+Supporting Infrastructure
+</div>
+
+<h1>Living Space</h1>
+
+<p class="lead">
+
+The Living Space is a simple apartment designed to support people while they
+build and develop Solvinter Edge.
+
+It is not intended as luxury accommodation.
+
+Its purpose is to make long-term work practical, affordable and sustainable.
+
+</p>
+
+</header>
+
+<div class="hero">
+
+<img src="images/visualisations/living-space.png"
+alt="Living space at Cow Lane">
+
+</div>
+
+<section>
+
+<h2>Purpose</h2>
+
+<p>
+
+Building a new node often requires weeks or months of continuous work.
+
+Providing a quiet place to sleep, prepare food and recover makes it possible to
+focus on the project rather than daily logistics.
+
+</p>
+
+<p>
+
+The Living Space supports the Workspace.
+
+Together they form the first operational Solvinter node.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Design Principles</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Simplicity</h3>
+
+<p>
+
+Small, practical and easy to maintain.
+
+Every square metre should serve a purpose.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Comfort</h3>
+
+<p>
+
+Air conditioning, natural light and good ventilation create an environment that
+supports health and recovery.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Function</h3>
+
+<p>
+
+The room should include a bed, desk, pentry, refrigerator and storage for
+daily living.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Calm</h3>
+
+<p>
+
+The atmosphere should encourage rest, reading and quiet conversation rather
+than constant activity.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Possible Uses</h2>
+
+<ul>
+
+<li>Temporary accommodation during the construction of Cow Lane Node 0.1.</li>
+
+<li>Housing for collaborators visiting Accra.</li>
+
+<li>Accommodation for future trainees.</li>
+
+<li>Short-term residence while launching new projects.</li>
+
+<li>An alternative to hotel stays for trusted partners.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Relationship to the Workspace</h2>
+
+<p>
+
+The Living Space is not an independent project.
+
+It exists because productive work requires rest.
+
+</p>
+
+<p>
+
+A sustainable working rhythm depends on both focused work and adequate recovery.
+
+Keeping these functions close together reduces unnecessary travel and allows
+more time to be invested in learning, documentation and collaboration.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Long-Term Vision</h2>
+
+<p>
+
+Future Solvinter nodes may include one or more guest rooms for collaborators,
+researchers and friends of the project.
+
+These spaces should remain modest, comfortable and closely connected to the
+local community rather than becoming commercial accommodation.
+
+</p>
+
+<p>
+
+Like the Workspace, the Living Space is intended to demonstrate that thoughtful,
+human-centred design can support meaningful work over long periods of time.
+
+</p>
+
+</section>
+
+<footer>
+
+Solvinter Edge · Living Space
+
+</footer>
+
+</main>
+
+</body>
+
+</html>
