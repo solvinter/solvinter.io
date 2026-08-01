@@ -5,7 +5,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Solvinter Edge</title>
+  <meta<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Solvinter Edge</title>
+
   <meta
+    name="description"
+    content="Documentation-first infrastructure for people, compute and learning."
+  />
+
+  <style>
+    :root {
+      --night: #030611;
+      --deep: #0b1530;
+      --text: #edf3ff;
+      --muted: rgba(237,243,255,.68);
+      --line: rgba(237,243,255,.16);
+      --gold: #ffd36a;
+      --blue: rgba(122,170,255,.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--night);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 16%, var(--blue) 0%, transparent 26%),
+        radial-gradient(circle at 50% 52%, rgba(255,211,106,.08) 0%, transparent 18%),
+        radial-gradient(circle at center, var(--deep) 0%, var(--night) 72%);
+    }
+
+    main {
+      width: min(92vw, 760px);
+      margin: auto;
+      padding: 5rem 1.5rem 6rem;
+    }
+
+    .back {
+      text-decoration: none;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .75rem;
+    }
+
+    .back:hover {
+      color: var(--gold);
+    }
+
+    header {
+      margin: 5rem 0;
+    }
+
+    .star {
+      width: .7rem;
+      height: .7rem;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow:
+        0 0 18px rgba(255,230,160,.95),
+        0 0 44px rgba(255,217,122,.45),
+        0 0 80px rgba(126,175,255,.28);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.7rem,8vw,5rem);
+      font-weight: 400;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .lead {
+      margin-top: 1.6rem;
+      max-width: 38rem;
+      color: var(--muted);
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    nav {
+      display: grid;
+      gap: .9rem;
+    }
+
+    nav a {
+      display: block;
+      padding: 1rem 1.2rem;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      transition: .2s ease;
+      letter-spacing: .08em;
+    }
+
+    nav a:hover {
+      border-color: rgba(255,211,106,.45);
+      color: var(--gold);
+      background: rgba(255,255,255,.05);
+      transform: translateX(4px);
+      box-shadow: 0 0 24px rgba(255,211,106,.08);
+    }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: .85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <a class="back" href="/">← Solvinter</a>
+
+  <header>
+
+    <div class="star"></div>
+
+    <h1>Solvinter Edge</h1>
+
+    <p class="lead">
+      Documentation-first infrastructure for people,
+      compute and learning.
+    </p>
+
+  </header>
+
+  <nav>
+
+    <a href="phase_01_accra_node.html">
+      Phase 01 — Accra Node
+    </a>
+
+    <a href="phase_02_mumford_learning_space.html">
+      Phase 02 — Mumford Learning Space
+    </a>
+
+    <a href="financial-plan.html">
+      Financial Plan
+    </a>
+
+    <a href="documentation.html">
+      Documentation
+    </a>
+
+    <a href="nodes.html">
+      Nodes
+    </a>
+
+    <a href="visualisations.html">
+      Visualisations
+    </a>
+
+    <a href="https://github.com/solvinter/edge.solvinter">
+      GitHub Repository
+    </a>
+
+  </nav>
+
+  <footer>
+    No large claims before logs.
+  </footer>
+
+</main>
+
+</body>
+</html>
     name="description"
     content="Documentation-first infrastructure for people, compute and learning."
   />
