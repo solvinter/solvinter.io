@@ -1,1 +1,402 @@
-git p
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manifesto | Solvinter Edge</title>
+
+  <style>
+    :root {
+      --ink: #061b33;
+      --muted: rgba(6, 27, 51, 0.72);
+      --soft: #f7f4ee;
+      --paper: rgba(255, 255, 255, 0.82);
+      --line: rgba(6, 27, 51, 0.14);
+      --gold: #bf8a22;
+      --green: #2e8b57;
+      --shadow: rgba(6, 27, 51, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(191,138,34,.14), transparent 28%),
+        linear-gradient(180deg, #fbfaf6 0%, var(--soft) 100%);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    main {
+      width: min(92vw, 980px);
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 3rem;
+      color: var(--gold);
+      text-decoration: none;
+      font-family: system-ui, sans-serif;
+      font-size: .9rem;
+    }
+
+    header {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 4.8rem);
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+    }
+
+    .rule {
+      width: 72px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1.6rem 0 0;
+    }
+
+    section {
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      color: var(--ink);
+      font-size: 1.55rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin: 1.2rem 0 .4rem;
+      color: var(--gold);
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    ul, ol {
+      margin: .5rem 0 0;
+      padding-left: 1.25rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      padding: 1.2rem;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+      box-shadow: 0 14px 40px var(--shadow);
+    }
+
+    .tag {
+      color: var(--gold);
+      font-family: system-ui, sans-serif;
+      font-size: .78rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 2rem 0 0;
+      text-align: center;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 760px) {
+      .grid,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding-top: 1.4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+  <a class="back" href="edge.html">← Edge</a>
+
+  <header>
+    <h1>Solvinter Edge</h1>
+    <p class="tag">Phase 01 — Accra Node 0.1</p>
+    <div class="rule"></div>
+  </header>
+
+  <section>
+    <h2>Why Solvinter Exists</h2>
+
+    <p>
+      Artificial intelligence, computing power, renewable energy and global
+      connectivity are becoming foundational resources of modern society.
+    </p>
+
+    <p>
+      Yet access to these resources remains deeply unequal.
+    </p>
+
+    <p>
+      Solvinter explores how small, locally owned infrastructure can make them
+      accessible to more people.
+    </p>
+
+    <p>
+      We do not begin with artificial intelligence.
+    </p>
+
+    <p>
+      We begin with people.
+    </p>
+
+    <p>
+      The purpose is not to build computers.
+    </p>
+
+    <p>
+      The purpose is to build opportunities.
+    </p>
+  </section>
+
+  <section>
+    <h2>Solvinter as an Interface</h2>
+
+    <p>
+      Solvinter is an interface between people and emerging technology.
+    </p>
+
+    <p>
+      Each node lowers the threshold for participating in the AI economy by
+      providing access to resources that are often unavailable individually.
+    </p>
+
+    <div class="card">
+      <ul>
+        <li>electricity</li>
+        <li>internet</li>
+        <li>computing power</li>
+        <li>artificial intelligence</li>
+        <li>digital fabrication</li>
+        <li>practical education</li>
+        <li>a collaborative community</li>
+      </ul>
+    </div>
+
+    <p>
+      No one knows in advance which opportunity will matter most.
+    </p>
+
+    <p>
+      A person may begin by learning AI tools. Later they may write software,
+      design products, operate a business, teach others, or build something
+      entirely unexpected.
+    </p>
+
+    <p>
+      The node exists to make those paths possible.
+    </p>
+  </section>
+
+  <section>
+    <h2>Phase 01 — Accra</h2>
+
+    <p>
+      The first operational node is located in Accra.
+    </p>
+
+    <p>
+      Accra provides the best current conditions for proving the concept through
+      reliable infrastructure, available technical skills and access to
+      international digital work.
+    </p>
+
+    <p>
+      The objective is not simply to generate income.
+    </p>
+
+    <p>
+      It is to understand how local access to infrastructure can create
+      long-term value.
+    </p>
+  </section>
+
+  <section>
+    <h2>The Economic Engine</h2>
+
+    <p>
+      The workstation room finances the node.
+    </p>
+
+    <div class="card">
+      <ul>
+        <li>two workstations initially</li>
+        <li>expansion to four when sustainable</li>
+        <li>remote digital work</li>
+        <li>AI-assisted work</li>
+        <li>software development</li>
+        <li>digital services</li>
+      </ul>
+    </div>
+
+    <p>
+      Revenue supports both maintenance and future community activities.
+    </p>
+  </section>
+
+  <section>
+    <h2>The Node</h2>
+
+    <p>
+      The workstation room is only one component.
+    </p>
+
+    <p>
+      Over time a node may include:
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="tag">Technology</div>
+        <ul>
+          <li>AI workstations</li>
+          <li>maker space</li>
+          <li>3D printing</li>
+          <li>community computing</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="tag">Learning</div>
+        <ul>
+          <li>homework support</li>
+          <li>digital literacy</li>
+          <li>technical education</li>
+          <li>AI training</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="tag">Community</div>
+        <ul>
+          <li>evening gaming</li>
+          <li>entrepreneurship</li>
+          <li>small business support</li>
+          <li>local collaboration</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>
+      Different locations may evolve in different ways.
+    </p>
+
+    <p>
+      No two nodes need to become identical.
+    </p>
+  </section>
+
+  <section>
+    <h2>Principles</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="tag">Human First</div>
+        <p>
+          Technology should increase human capability rather than replace it.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Local Ownership</div>
+        <p>
+          Nodes should create lasting value where they are built.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Practical Learning</div>
+        <p>
+          Knowledge grows through real projects rather than abstract
+          instruction.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card" style="margin-top:1rem;">
+      <div class="tag">Open Documentation</div>
+      <p>
+        Failures are documented alongside successes so others can learn,
+        improve and build further.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Year One</h2>
+
+    <p>
+      The first year is intentionally modest.
+    </p>
+
+    <p>
+      The goal is to answer four practical questions:
+    </p>
+
+    <ol>
+      <li>Can a small space be built affordably?</li>
+      <li>Can people perform productive digital work there?</li>
+      <li>Can that work finance continued operation?</li>
+      <li>Can the model be replicated elsewhere?</li>
+    </ol>
+
+    <p>
+      If these questions are answered positively, the first node becomes more
+      than a building.
+    </p>
+
+    <p>
+      It becomes evidence that small communities can participate directly in
+      the emerging AI economy.
+    </p>
+  </section>
+
+  <footer>
+    Solvinter Edge explores how local infrastructure can expand human
+    opportunity in the age of artificial intelligence.
+  </footer>
+</main>
+</body>
+</html>
