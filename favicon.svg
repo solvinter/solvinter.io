@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Solvinter">
+  <rect width="64" height="64" rx="14" fill="#030611"/>
+  <circle cx="32" cy="32" r="21" fill="#0b1530"/>
+  <circle cx="32" cy="32" r="17" fill="#7aaaFF" opacity=".12"/>
+  <path d="M32 8 36.5 27.5 56 32 36.5 36.5 32 56 27.5 36.5 8 32 27.5 27.5Z" fill="#ffd36a"/>
+  <circle cx="32" cy="32" r="5.5" fill="#fff9e8"/>
+</svg>
